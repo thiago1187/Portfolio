@@ -54,9 +54,9 @@ const About = () => {
             Sobre <span className="text-gradient">Mim</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras. 
-            Com mais de 3 anos de experiência, trabalho transformando ideias em realidade 
-            através de código elegante e design pensado na experiência do usuário.
+            Estudante na Cesar School, apaixonado por tecnologia, esportes e viagens. 
+            Desenvolvedor com experiência em diversas tecnologias, sempre em busca de 
+            crescimento e novos desafios que me permitam criar soluções inovadoras.
           </p>
         </div>
 
@@ -66,18 +66,19 @@ const About = () => {
             <h3 className="text-2xl font-bold text-gradient">Minha Jornada</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Comecei minha jornada na programação há alguns anos, fascinado pela capacidade 
-                de criar experiências digitais que impactam a vida das pessoas. Desde então, 
-                venho me especializando em tecnologias modernas como React, Node.js e TypeScript.
+                Desde pequeno, sempre fui movido por competição e estratégia. Já participei e até 
+                ganhei dinheiro jogando games competitivos, onde desenvolvi foco, tomada de decisão 
+                rápida e trabalho em equipe - soft skills essenciais no mundo da tecnologia.
               </p>
               <p>
-                Acredito que a combinação entre código limpo, design intuitivo e performance 
-                otimizada é a chave para criar produtos digitais excepcionais. Cada projeto 
-                é uma oportunidade de aprender algo novo e superar desafios técnicos.
+                Minha jornada como desenvolvedor envolve experiências com JavaScript, Python (Django), 
+                Java (Spring Boot), C, HTML, CSS e Arduino. Já criei desde jogos 2D e sistemas com 
+                interface moderna, até aplicações em terminal e projetos físicos.
               </p>
               <p>
-                Quando não estou codando, gosto de estudar novas tecnologias, contribuir para 
-                projetos open-source e compartilhar conhecimento com a comunidade dev.
+                Atualmente me aprofundo em ciência de dados e machine learning. Tenho o sonho de 
+                viajar o mundo e usar a tecnologia como ponte entre ideias e impacto real, construindo 
+                coisas úteis, criativas e ousadas.
               </p>
             </div>
           </div>

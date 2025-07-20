@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import heroAvatar from '@/assets/hero-avatar.jpg';
+import heroAvatar from '@/assets/thiago-avatar.jpg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,9 +18,9 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/ThiagoAlvesMacena', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
+    { icon: Mail, href: 'mailto:thiago.amacena2@hotmail.com', label: 'Email' },
   ];
 
   return (
@@ -40,13 +40,14 @@ const Hero = () => {
             <div className="space-y-4">
               <p className="text-primary text-lg font-medium">Olá, eu sou</p>
               <h1 className="text-5xl md:text-7xl font-bold">
-                <span className="text-gradient">Desenvolvedor</span>
+                <span className="text-gradient">Thiago</span>
                 <br />
-                <span className="text-foreground">Full Stack</span>
+                <span className="text-foreground">Alves Macena</span>
               </h1>
+              <p className="text-lg text-primary font-medium mb-4">Estudante na Cesar School</p>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Criando experiências digitais incríveis com código limpo e design inovador. 
-                Especializado em React, Node.js e tecnologias modernas.
+                Apaixonado por tecnologia, esportes e viagens. Desenvolvedor com experiência em JavaScript, Python, Java, 
+                C e muito mais. Movido pela busca de liberdade, crescimento e propósito.
               </p>
             </div>
 

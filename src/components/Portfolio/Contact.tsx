@@ -50,19 +50,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contato@portfolio.dev',
-      href: 'mailto:contato@portfolio.dev'
+      value: 'thiago.amacena2@hotmail.com',
+      href: 'mailto:thiago.amacena2@hotmail.com'
     },
     {
       icon: Phone,
       title: 'Telefone',
-      value: '+55 (11) 99999-9999',
-      href: 'tel:+5511999999999'
+      value: '+55 (17) 99739-0304',
+      href: 'tel:+5517997390304'
     },
     {
       icon: MapPin,
       title: 'Localização',
-      value: 'São Paulo, Brasil',
+      value: 'Recife, Brasil',
       href: '#'
     }
   ];
