@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Instagram, MessageCircle } from 'lucide-react';
 import heroAvatar from '@/assets/thiago-avatar.jpg';
 
 const Hero = () => {
@@ -18,8 +18,10 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/ThiagoAlvesMacena', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/thiago1187', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/thiago-alves-computação/', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/thiagoalves_11/', label: 'Instagram' },
+    { icon: MessageCircle, href: 'https://wa.me/5511999999999', label: 'WhatsApp' },
     { icon: Mail, href: 'mailto:thiago.amacena2@hotmail.com', label: 'Email' },
   ];
 

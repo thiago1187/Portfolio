@@ -28,62 +28,52 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      description: 'Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque.',
+      title: 'ScoutMatch',
+      description: 'Sistema fullstack que cruza dados de jogadores com os requisitos de clubes (posição, perna dominante, estilo de jogo, idade, etc.), exibindo o nível de compatibilidade em uma interface moderna e interativa.',
       image: '/placeholder.svg',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      tags: ['Spring Boot', 'React', 'Tailwind CSS', 'shadcn/ui'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/thiago1187/ScoutMatch',
       featured: true
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'Aplicativo de gerenciamento de tarefas com colaboração em tempo real e sincronização na nuvem.',
+      title: 'FutHub – Organizador de Peladas',
+      description: 'CRUD em terminal para gerenciar peladas. Organiza dados de jogadores, datas e performances. Foi um dos projetos em que mais desenvolvi minha lógica de programação e manipulação de arquivos.',
       image: '/placeholder.svg',
-      tags: ['Next.js', 'Socket.io', 'MongoDB', 'Tailwind'],
+      tags: ['Python', 'Django', 'CSS', 'JavaScript', 'HTML'],
       liveUrl: '#',
-      githubUrl: '#',
-      featured: false
+      githubUrl: 'https://github.com/thiago1187/FutHub_PROJETO_FDS',
+      featured: true
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Dashboard interativo com dados meteorológicos em tempo real e previsões personalizadas.',
+      title: 'Quiz Recife (Totem com Arduino)',
+      description: 'Totem físico interativo com botões, funcionando como quiz cultural sobre a cidade de Recife. Projeto que uniu software e hardware, com foco em interatividade e impacto local.',
       image: '/placeholder.svg',
-      tags: ['Vue.js', 'Express', 'API Integration', 'Charts.js'],
+      tags: ['Arduino', 'C/C++', 'Hardware'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/thiago1187/G10---Reciquiz',
       featured: false
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'Site portfolio responsivo com animações elegantes e design moderno.',
+      title: 'Jogo 2D no Construct',
+      description: 'Jogo multiplayer local onde dois personagens duelam em um ambiente 2D com física simples. Inicialmente inspirado no estilo cooperativo de Fogo e Água, acabou virando um duelo competitivo tipo Brawlhalla.',
       image: '/placeholder.svg',
-      tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      tags: ['Construct', 'Game Design'],
       liveUrl: '#',
-      githubUrl: '#',
-      featured: true
-    },
-    {
-      id: 5,
-      title: 'Chat Application',
-      description: 'Aplicação de chat em tempo real com salas privadas e compartilhamento de arquivos.',
-      image: '/placeholder.svg',
-      tags: ['React', 'Socket.io', 'Firebase', 'Material-UI'],
-      liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: null,
       featured: false
     },
     {
-      id: 6,
-      title: 'Analytics Dashboard',
-      description: 'Dashboard analítico com visualizações de dados interativas e relatórios customizáveis.',
+      id: 5,
+      title: 'Air Hockey em C',
+      description: 'Jogo de Air Hockey simples jogado no terminal, com movimentação, lógica de colisão e placar. Foco em lógica, vetores e manipulação de interface textual. Ótimo exercício de C puro.',
       image: '/placeholder.svg',
-      tags: ['Angular', 'D3.js', 'Python', 'PostgreSQL'],
+      tags: ['C', 'Terminal', 'Game Logic'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/thiago1187/Air-Hockey',
       featured: false
     }
   ];
@@ -151,9 +141,13 @@ const Projects = () => {
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Ver Projeto
                     </Button>
-                    <Button size="sm" variant="outline">
-                      <Github className="h-4 w-4" />
-                    </Button>
+                    {project.githubUrl && (
+                      <Button size="sm" variant="outline" asChild>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -179,12 +173,20 @@ const Projects = () => {
                   <div className="flex items-start justify-between mb-4">
                     <h4 className="text-lg font-bold">{project.title}</h4>
                     <div className="flex space-x-2">
-                      <Button size="sm" variant="ghost" className="h-8 w-8 p-0">
-                        <ExternalLink className="h-4 w-4" />
-                      </Button>
-                      <Button size="sm" variant="ghost" className="h-8 w-8 p-0">
-                        <Github className="h-4 w-4" />
-                      </Button>
+                      {project.liveUrl !== '#' && (
+                        <Button size="sm" variant="ghost" className="h-8 w-8 p-0" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
+                      {project.githubUrl && (
+                        <Button size="sm" variant="ghost" className="h-8 w-8 p-0" asChild>
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">{project.description}</p>

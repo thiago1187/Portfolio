@@ -8,48 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: 220 30% 2%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 218 25% 4%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 3.9%;
+    --popover: 218 25% 4%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 263 70% 50%;
+    --primary: 215 85% 55%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 280 100% 70%;
+    --primary-glow: 215 100% 65%;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 218 15% 12%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 218 15% 12%;
+    --muted-foreground: 215 15% 65%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 218 15% 12%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 263 70% 50%;
+    --border: 218 15% 12%;
+    --input: 218 15% 12%;
+    --ring: 215 85% 55%;
 
     /* Portfolio specific colors */
-    --hero-gradient: linear-gradient(135deg, hsl(263, 70%, 50%), hsl(280, 100%, 70%), hsl(300, 80%, 60%));
-    --card-gradient: linear-gradient(135deg, hsl(240, 10%, 8%), hsl(240, 5%, 12%));
-    --accent-gradient: linear-gradient(90deg, hsl(263, 70%, 50%), hsl(280, 100%, 70%));
+    --hero-gradient: linear-gradient(135deg, hsl(215, 85%, 55%), hsl(215, 100%, 65%), hsl(220, 80%, 60%));
+    --card-gradient: linear-gradient(135deg, hsl(218, 25%, 4%), hsl(218, 15%, 8%));
+    --accent-gradient: linear-gradient(90deg, hsl(215, 85%, 55%), hsl(215, 100%, 65%));
     
     /* Glassmorphism */
-    --glass: hsla(240, 10%, 15%, 0.8);
-    --glass-border: hsla(0, 0%, 100%, 0.1);
+    --glass: hsla(218, 25%, 8%, 0.8);
+    --glass-border: hsla(215, 85%, 55%, 0.2);
     
     /* Shadows */
-    --shadow-glow: 0 0 50px hsla(263, 70%, 50%, 0.3);
-    --shadow-card: 0 8px 32px hsla(240, 10%, 3%, 0.4);
-    --shadow-hero: 0 25px 50px hsla(263, 70%, 50%, 0.2);
+    --shadow-glow: 0 0 50px hsla(215, 85%, 55%, 0.4);
+    --shadow-card: 0 8px 32px hsla(220, 30%, 2%, 0.6);
+    --shadow-hero: 0 25px 50px hsla(215, 85%, 55%, 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

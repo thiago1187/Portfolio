@@ -36,47 +36,47 @@ const Skills = () => {
 
   const skills = [
     {
-      category: 'Frontend',
-      icon: '🎨',
+      category: 'Linguagens',
+      icon: '💻',
       items: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Vue.js', level: 75 }
+        { name: 'JavaScript', level: 90 },
+        { name: 'Python', level: 90 },
+        { name: 'Java', level: 90 },
+        { name: 'C', level: 90 },
+        { name: 'TypeScript', level: 75 },
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 95 }
       ]
     },
     {
-      category: 'Backend',
+      category: 'Frameworks',
       icon: '⚙️',
       items: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Express', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 }
+        { name: 'React', level: 80 },
+        { name: 'Spring Boot', level: 90 },
+        { name: 'Django', level: 90 },
+        { name: 'Tailwind CSS', level: 85 },
+        { name: 'shadcn/ui', level: 80 }
       ]
     },
     {
-      category: 'DevOps & Tools',
-      icon: '🔧',
+      category: 'Ferramentas',
+      icon: '🧪',
       items: [
-        { name: 'Git', level: 95 },
-        { name: 'Docker', level: 80 },
-        { name: 'AWS', level: 75 },
-        { name: 'Linux', level: 85 },
-        { name: 'CI/CD', level: 70 }
+        { name: 'Git & GitHub', level: 90 },
+        { name: 'Vite', level: 75 },
+        { name: 'Arduino', level: 70 },
+        { name: 'Construct', level: 65 },
+        { name: 'Figma', level: 40 },
+        { name: 'Postman', level: 40 }
       ]
     },
     {
-      category: 'Design & UX',
-      icon: '✨',
+      category: 'Bancos de Dados',
+      icon: '🗄️',
       items: [
-        { name: 'Figma', level: 85 },
-        { name: 'UI/UX Design', level: 80 },
-        { name: 'Responsive Design', level: 95 },
-        { name: 'Animation', level: 75 },
-        { name: 'Prototyping', level: 80 }
+        { name: 'MySQL', level: 40 },
+        { name: 'SQLite', level: 40 }
       ]
     }
   ];
@@ -132,46 +132,23 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Skills */}
-        <div className={`mt-16 text-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h3 className="text-2xl font-bold mb-8">Outras Competências</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'Metodologias Ágeis', 'Clean Code', 'TDD', 'API REST', 'GraphQL',
-              'Microserviços', 'Performance Optimization', 'SEO', 'Accessibility',
-              'Team Leadership', 'Code Review', 'Mentoring'
-            ].map((skill, index) => (
-              <div 
-                key={skill}
-                className={`glass px-4 py-2 rounded-full text-sm hover-scale transition-smooth ${
-                  isVisible ? 'animate-fade-in' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Learning */}
         <div className={`mt-16 text-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h3 className="text-2xl font-bold mb-6 text-gradient">Aprendendo Agora</h3>
+          <h3 className="text-2xl font-bold mb-6 text-gradient">🎯 Foco atual de estudo</h3>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              { name: 'Rust', icon: '🦀' },
-              { name: 'WebAssembly', icon: '⚡' },
+              { name: 'Desenvolvimento Fullstack', icon: '💻' },
               { name: 'Machine Learning', icon: '🤖' },
-              { name: 'Blockchain', icon: '⛓️' }
+              { name: 'Ciência de Dados', icon: '📊' }
             ].map((item, index) => (
               <div 
                 key={item.name}
-                className={`glass p-4 rounded-lg hover-scale transition-smooth ${
+                className={`glass p-6 rounded-lg hover-scale transition-smooth text-center ${
                   isVisible ? 'animate-pulse-glow' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="text-2xl mb-2">{item.icon}</div>
+                <div className="text-3xl mb-3">{item.icon}</div>
                 <div className="text-sm font-medium">{item.name}</div>
               </div>
             ))}
