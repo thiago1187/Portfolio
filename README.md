@@ -43,7 +43,7 @@ Se você quiser clonar este repositório e rodar localmente:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/thiago1187/Portfolio/tree/main
 
 # Acesse o diretório do projeto
 cd seu-repositorio
