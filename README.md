@@ -2,7 +2,8 @@
 
 Bem-vindo ao meu portfólio! Este projeto foi desenvolvido com foco em performance, organização e design moderno para apresentar minhas habilidades, experiências e projetos pessoais.
 
-🔗 Acesse aqui: [lovable.dev/projects/95003366-d0ce-4d30-ba63-bcebfc068ac2](https://lovable.dev/projects/95003366-d0ce-4d30-ba63-bcebfc068ac2)
+🔗 Acesse aqui:
+https://portfolio-thiago1187.vercel.app
 
 ---
 
