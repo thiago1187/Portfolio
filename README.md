@@ -43,10 +43,10 @@ Se você quiser clonar este repositório e rodar localmente:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/thiago1187/Portfolio/tree/main
+git clone https://github.com/thiago1187/Portfolio.git
 
 # Acesse o diretório do projeto
-cd seu-repositorio
+cd Portfolio
 
 # Instale as dependências
 npm install
