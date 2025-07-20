@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Eye } from 'lucide-react';
+import footballField from '@/assets/football-field.jpg';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ const Projects = () => {
       id: 1,
       title: 'ScoutMatch',
       description: 'Sistema fullstack que cruza dados de jogadores com os requisitos de clubes (posição, perna dominante, estilo de jogo, idade, etc.), exibindo o nível de compatibilidade em uma interface moderna e interativa.',
-      image: '/placeholder.svg',
+      image: footballField,
       tags: ['Spring Boot', 'React', 'Tailwind CSS', 'shadcn/ui'],
       liveUrl: '#',
       githubUrl: 'https://github.com/thiago1187/ScoutMatch',
@@ -40,7 +41,7 @@ const Projects = () => {
       id: 2,
       title: 'FutHub – Organizador de Peladas',
       description: 'CRUD em terminal para gerenciar peladas. Organiza dados de jogadores, datas e performances. Foi um dos projetos em que mais desenvolvi minha lógica de programação e manipulação de arquivos.',
-      image: '/placeholder.svg',
+      image: footballField,
       tags: ['Python', 'Django', 'CSS', 'JavaScript', 'HTML'],
       liveUrl: '#',
       githubUrl: 'https://github.com/thiago1187/FutHub_PROJETO_FDS',

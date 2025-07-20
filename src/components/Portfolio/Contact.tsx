@@ -224,26 +224,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Availability */}
-            <Card className="glass border-border/50">
-              <CardContent className="p-6">
-                <h4 className="font-semibold mb-2 text-gradient">Disponibilidade</h4>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span>Segunda - Sexta</span>
-                    <span className="text-muted-foreground">9h - 18h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sábado</span>
-                    <span className="text-muted-foreground">9h - 14h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingo</span>
-                    <span className="text-muted-foreground">Fechado</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

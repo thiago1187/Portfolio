@@ -106,13 +106,13 @@ const About = () => {
         </div>
 
         {/* Stats */}
-        <div className={`mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className={`mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           {[
-            { number: '50+', label: 'Projetos Concluídos' },
-            { number: '3+', label: 'Anos de Experiência' },
-            { number: '20+', label: 'Tecnologias' },
+            { number: '6+', label: 'Projetos Concluídos' },
+            { number: '1+', label: 'Ano de Experiência' },
+            { number: '15+', label: 'Tecnologias' },
             { number: '100%', label: 'Comprometimento' }
-          ].map((stat, index) => (
+          ].slice(0, 3).map((stat, index) => (
             <div 
               key={stat.label} 
               className="text-center"
